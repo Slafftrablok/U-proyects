@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 
-float calcularPagoTotal(float monto, float tasaInteres, int tiempo, int ano) {
+int float calcularPagoTotal(float monto, float tasaInteres, int tiempo, int ano) {
     float pagoAnual = monto * (1 + tasaInteres / 100 * ano);
     return pagoAnual;
 }
 
 
-float calcularPagoMensual(float pagoAnual, int tiempo) {
+int float calcularPagoMensual(float pagoAnual, int tiempo) {
     float pagoMensual = pagoAnual / (tiempo * 12);
     return pagoMensual;
 }
